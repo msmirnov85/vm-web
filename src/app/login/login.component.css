@@ -1,0 +1,33 @@
+.login .loginForm {opacity:1; transition:opacity .5s;}
+.login .isMoved .loginForm {opacity:1;}
+.login #view {right:0;}
+.loginBlock {position:relative; width:100%; height:100%; opacity:1; transition:opacity .3s; background:url('/assets/back_login.jpg') no-repeat 50% 50%; background-size:cover;}
+.loginBlock.show {opacity:1;}
+.loginBlock > div {position:absolute; transition:top .5s; top:21em; left:50%; margin-left:-21em; margin-top:-10.5em; z-index:9; width:42em; display:block; text-align:left;}
+.loginBlock > div > span {display:block;}
+.loginBlock .img {margin-bottom:6em; position:relative; transition:all .5s; opacity:1;}
+.loginBlock .img img {margin:0 auto; display:block; position:relative; z-index:1;}
+.loginBlock .img img.splash {height:15em;}
+.loginBlock .img img.text {height:6em; margin-top:1em;}
+.loginBlock .fadeIn .img {opacity:1;}
+.loginBlock .move {top:21em;}
+.loginForm {text-align:center; margin-bottom:4em;}
+.loginForm #sendBtn { transition:all 0.4s; margin-top:0.3em; width:100%; padding:0; border:none; border-radius:10em; border:2px solid #fff; background:none; cursor:pointer; color:#fff; text-align:center;}
+/*#loginForm #sendBtn.logged {background-image:url('/assets/ico_checked.png'); transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -moz-transform: rotateY(180deg);}*/
+/*#loginForm #sendBtn:hover {background-color:#ccdde9; border-color:#ccdde9; background-image:url('/assets/ico_go_hover.png');}*/
+.loginForm fieldset {display:block; text-align:center; position:relative; margin:0 auto; height:5.5em; width:100%;}
+.loginForm fieldset + fieldset {margin-top:2em;}
+.loginForm fieldset .input {background-color:#fff; border-radius:0.4em; overflow:hidden; height:100%;}
+.loginForm fieldset input {display:block; width:92%; height:100%; font-size:2.2em; border:none; color:#353434; padding:0 4%;}
+.loginForm fieldset.error:after {background:url('/assets/ico_error.png') no-repeat; height:4em; width:4em; background-size:contain; content:'' ;position:absolute; display:block; top:50%; margin-top:-2em; right:1em;}
+.loginForm fieldset.submit {height:5em; width:50%; margin-top:3em;}
+.loginForm .errorMessage {right:7em;}
+.loginForm .serverErrorMessage {width:100em; left:-29em;}
+.loginForm fieldset label {display:inline-block; vertical-align:middle; width:22em; text-align:right; padding-right:3em; color:#fff;}
+.loginForm fieldset label span {font-size:2.5em;}
+.loginBlock .otherActions a {margin-bottom:2em; display:inline-block;}
+.loginBlock .otherActions a.signUp .icon {background-image:url('/assets/icon-login-signup.png');}
+.loginBlock .otherActions a.noLogin .icon {background-image:url('/assets/icon-login-nosignup.png');}
+.loginBlock .otherActions a.noPassword .icon {background-image:url('/assets/icon-login-password.png');}
+.loginBlock .otherActions .icon {width:3em; height:3em; display:inline-block; vertical-align:middle; border-radius:100%; overflow:hidden; background-size:90%; background-position:50% 50%; background-repeat:no-repeat;}
+.loginBlock .otherActions .title span {font-size:1.8em; color:#fff; display:inline-block; vertical-align:middle; margin-left:0.5em;}

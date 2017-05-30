@@ -1,0 +1,65 @@
+<div class="loginBlock" [ngClass]="{'show': isLoaded}">
+    <div [ngClass]="{'move': move, 'isMoved': isMoved, 'fadeIn': loginBlockIsShown}">
+        <span class="img">
+            <img class="splash" src="assets/logo_splash.png" />
+            <img class="text" src="assets/splash_logo_txt.png" />
+        </span>
+        <div class="loginForm">
+            <form id="loginForm" name="loginForm" novalidate>
+                <div class="form">
+
+                    <fieldset>
+                        <div class="input">
+                            <div class="errorMessage"><span>Please enter Username</span></div>
+                            <input name="userName" required placeholder="Username" type="text" id="login" class="login"/>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <div class="input">
+                            <div class="errorMessage"><span>Please enter a password</span></div>
+                            <input name="password" required placeholder="Password" type="password" id="pass" class="pass"/>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="submit">
+                        <input type="submit" value="Login" id="sendBtn"/>
+                    </fieldset>
+
+                <!--<span class="errorMessage" ng-class="{'show': loginError}">Dit brugernavn og password matcher ikke.</span>-->
+                </div>
+            </form>
+            <!--<div class="otherActions">
+                <div>
+                    <a class="signUp">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <span>{{Dictionary[lang]["Sign up"]}}</span>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a class="noLogin" href="/#/">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <span>{{Dictionary[lang]["Proceed without login"]}}</span>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a class="noPassword">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <span>{{Dictionary[lang]["Forgot password?"]}}</span>
+                        </span>
+                    </a>
+                </div>
+            </div>-->
+        <div class="serverErrorMessage">
+            <div>
+                <!--<span>{{Dictionary[lang][loginErrorMessage]}}</span>-->
+            </div>
+        </div>
+        <img hidden src="assets/back_login.jpg"/>
+    </div>
+</div>
